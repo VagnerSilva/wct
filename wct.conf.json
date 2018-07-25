@@ -1,0 +1,29 @@
+{
+    "verbose": true,
+    "testTimeout": 30000,
+    "quiet": false,
+    "compile": "auto",
+    "expanded": false,
+    "persistent": false,
+    "npm": true,
+    "moduleResolution": "node",
+    "browserOptions": {
+        "browserName" : "chrome",
+        "chromeOptions" : {
+            "args" : ["--headless"]
+        }
+    },
+    "plugins": {
+      "local": {
+        "disabled": true,
+        "skipSeleniumInstall": true,
+        "browserOptions": {
+          "chrome": [
+            "headless",
+            "disable-gpu",
+            "no-sandbox"
+          ]
+        }
+      }
+    }
+  }
